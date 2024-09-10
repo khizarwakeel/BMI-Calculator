@@ -15,22 +15,22 @@
     <div class="divCenter">
         <div>
             <h1 class="mb-5 mt-5 mt-md-0">BMI Calculator</h1>
-            <form onsubmit="calculateBMI(); return false;">
+            <form onsubmit="calculateBMI(event)">
                 <label class="h5">Your Height</label>
                 <div class="d-flex gap-3 mt-3">
                     <div class="input-group flex-nowrap">
-                        <input type="number" class="form-control" min="0" max="10" placeholder="Feet" aria-label="Feet"
-                            aria-describedby="addon-wrapping">
+                        <input type="number" class="form-control" id="heightInputFeet" min="0" max="10"
+                            placeholder="Feet" required aria-label="Feet" aria-describedby="addon-wrapping">
                     </div>
                     <div class="input-group flex-nowrap">
-                        <input type="number" class="form-control" min="0" max="11" placeholder="Inch" aria-label="Inch"
-                            aria-describedby="addon-wrapping">
+                        <input type="number" class="form-control" id="heightInputInch" min="0" max="11"
+                            placeholder="Inch" required aria-label="Inch" aria-describedby="addon-wrapping">
                     </div>
                 </div>
                 <label class="h5 py-3">Your Weight</label>
                 <div class="input-group flex-nowrap">
-                    <input type="number" class="form-control" min="0" max="11" placeholder="65kg" aria-label="65kg"
-                        aria-describedby="addon-wrapping">
+                    <input type="number" class="form-control" id="weightInputKg" min="0" placeholder="65kg"
+                        aria-label="65kg" step="any" required aria-describedby="addon-wrapping">
                 </div>
                 <div class="mt-4">
                     <button type="submit" class="btn btn-dark w-100">Calculate</button>
