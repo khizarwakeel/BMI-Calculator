@@ -8,6 +8,21 @@ function calculateBMI(event) {
 
     heightInputInch += heightInputFeet * 12;
 
-    let heightInCm = heightInputInch * 2.54;
+    let heightInMeter = (heightInputInch * 2.54) / 10;
+    let heightInMeterSq = heightInMeter * heightInMeter;
+    let bodyMassIndex = weightInputKg / heightInMeterSq;
 
+    let title = "";
+    if (bodyMassIndex > 30) {
+        title = "obese";
+    }
+    else if (bodyMassIndex > 25) {
+        title = "Overweight";
+    }
+    else if (bodyMassIndex > 18.5) {
+        title = "Normal";
+    }
+    else {
+        title = "Underweight";
+    }
 }
