@@ -11,31 +11,35 @@
 </head>
 
 <body>
-
-    <div class="divCenter">
-        <div>
-            <h1 class="mb-5 mt-5 mt-md-0">BMI Calculator</h1>
-            <form onsubmit="calculateBMI(event)">
-                <label class="h5">Your Height</label>
-                <div class="d-flex gap-3 mt-3">
-                    <div class="input-group flex-nowrap">
-                        <input type="number" class="form-control" id="heightInputFeet" min="0" max="10"
-                            placeholder="Feet" required aria-label="Feet" aria-describedby="addon-wrapping">
+    <div class="container my-5 ">
+        <div class="row justify-content-center divCenter">
+            <div class="col-md-6">
+                <h1 class="text-center mb-5">BMI Calculator</h1>
+                <form onsubmit="calculateBMI(event)">
+                    <div class="mb-3">
+                        <label for="heightInputFeet" class="form-label">Your Height</label>
+                        <div class="d-flex gap-3">
+                            <input type="number" class="form-control" id="heightInputFeet" min="0" max="10"
+                                placeholder="Feet" required aria-label="Feet">
+                            <input type="number" class="form-control" id="heightInputInch" min="0" max="11"
+                                placeholder="Inch" required aria-label="Inch">
+                        </div>
                     </div>
-                    <div class="input-group flex-nowrap">
-                        <input type="number" class="form-control" id="heightInputInch" min="0" max="11"
-                            placeholder="Inch" required aria-label="Inch" aria-describedby="addon-wrapping">
+                    <div class="mb-3">
+                        <label for="weightInputKg" class="form-label">Your Weight</label>
+                        <input type="number" class="form-control" id="weightInputKg" min="0" placeholder="65kg" required
+                            aria-label="Weight" step="any">
                     </div>
-                </div>
-                <label class="h5 py-3">Your Weight</label>
-                <div class="input-group flex-nowrap">
-                    <input type="number" class="form-control" id="weightInputKg" min="0" placeholder="65kg"
-                        aria-label="65kg" step="any" required aria-describedby="addon-wrapping">
-                </div>
-                <div class="mt-4">
-                    <button type="submit" class="btn btn-dark w-100">Calculate</button>
-                </div>
-            </form>
+                    <div class="mb-4">
+                        <button type="submit" class="btn btn-dark w-100">Calculate</button>
+                    </div>
+                    <div class="text-center" style="max-width: 380px; margin: 0 auto;">
+                        <p id="BMIIndex"></p>
+                        <p id="title"></p>
+                        <p id="averageWeight"></p>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 
