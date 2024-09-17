@@ -11,10 +11,10 @@
     height: 100vh;
 }
 
-@media only screen and (max-width: 425px) {
-    .divCenter {
-       display: block;
-        padding: 0px 20px;
-        height: 100%;
-    }
+#BMIIndex, #title, #averageWeight {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    margin-top: 10px;
 }
