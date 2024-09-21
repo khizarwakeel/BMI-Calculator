@@ -38,13 +38,23 @@ function calculateBMI(event) {
     }
     else if (bodyMassIndex > 18.5) {
         if (bodyMassIndex > 22) {
-            title += `Normal but optionally you may lose ${weightToLose}kg to become ideally fit`;
+            // Check if the weight to lose is less than 1kg to consider "Perfectly Fit"
+            if (weightToLose < 1) {
+                title += `perfectly Fit`;
+            } else {
+                title += `Normal but optionally you may lose ${weightToLose}kg to become ideally fit`;
+            }
         }
         else if (parseInt(bodyMassIndex) === 22) {
-            title += `perfectly Fit`;
+            title += `Perfectly Fit`;
         }
         else {
-            title += `Normal but optionally you may gain ${weightToGain}kg to become ideally fit`;
+            // Check if the weight to gain is less than 1kg to consider "Perfectly Fit"
+            if (weightToGain < 1) {
+                title += `perfectly Fit`;
+            } else {
+                title += `Normal but optionally you may gain ${weightToGain}kg to become ideally fit`;
+            }
         }
     }
     else {
