@@ -69,5 +69,5 @@ function calculateBMI(event) {
     // Updates the HTML content with the calculated BMI index, category, and ideal weight.
     document.querySelector("#BMIIndex").innerHTML = "<span style='font-weight: bold;'> BMI Index :</span> " + bodyMassIndex;
     document.querySelector("#title").innerHTML = "<span style='font-weight: bold;'> Guide :</span> " + title;
-    document.querySelector("#averageWeight").innerHTML = "<span style='font-weight: bold;'> Ideal Weight :</span> " + idealWeight;
+    document.querySelector("#averageWeight").innerHTML = "<span style='font-weight: bold;'> Ideal Weight :</span> " + idealWeight + "kg";
 }
