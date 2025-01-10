@@ -9,12 +9,26 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    padding: 30px 0px;
 }
 
-#BMIIndex, #title, #averageWeight {
+@media only screen and (max-width: 600px) {
+    .divCenter {
+        height: auto;
+    }
+}
+
+#BMIIndex,
+#title,
+#averageWeight {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
     background-color: #f8f9fa;
     margin-top: 10px;
+}
+
+.chartImg {
+    width: 100%;
+    height: 100%;
 }

@@ -38,7 +38,31 @@
                         <p id="title"></p>
                         <p id="averageWeight"></p>
                     </div>
+                    <!-- Button to trigger Modal -->
+                    <div class="mt-md-4 mt-2 d-flex justify-content-center">
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#myModal">
+                            See the BMI Chart
+                        </button>
+                    </div>
                 </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">BMI Chart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                   <img src="./assets/chart.jpg" alt="BMI Chart" title="BMI Chart" class="chartImg">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
     </div>
