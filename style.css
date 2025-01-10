@@ -8,8 +8,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    padding: 30px 0px;
 }
 
 #BMIIndex,
@@ -19,7 +17,6 @@
     border: 1px solid #ddd;
     border-radius: 5px;
     background-color: #f8f9fa;
-    margin-top: 10px;
 }
 
 .chartImg {
